@@ -4,6 +4,8 @@ import android.util.Log;
 
 public class convertToInt {
 
+    //This class is used to convert the output to int i.e, removing redundant 0's of resulting float
+
     private String rawVal="";
     private String intVal="";
 

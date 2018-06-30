@@ -12,6 +12,8 @@ import gr.net.maroulis.library.EasySplashScreen;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
     private Handler mHandler = new Handler();
 
 
@@ -20,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
+
+        //Making this activity splashscreen
 
         mHandler.postDelayed(new Runnable() {
             @Override
