@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash_app_head">Unit Converter</string>
+    <string name="lets_go">Lets go</string>
+    <string-array name="length">
+        <item>Millimeter</item>
+        <item>Centimeter</item>
+        <item>Meter</item>
+        <item>Kilometer</item>
+        <item>Mile</item>
+    </string-array>
+
+    <string-array name="temperature">
+        <item>Celcius</item>
+        <item>Kelvin</item>
+        <item>Fahrenheit</item>
+    </string-array>
+
+    <string-array name="area">
+        <item>Sq. Millimeter</item>
+        <item>Sq. Centimeter</item>
+        <item>Sq. Meter</item>
+        <item>Sq. Kilometer</item>
+        <item>Sq. Mile</item>
+    </string-array>
+
+    <string-array name="volume">
+        <item>Milliliter</item>
+        <item>Liter</item>
+        <item>US Fluid ounce</item>
+        <item>US Quart</item>
+        <item>US Gallon</item>
+    </string-array>
+
+    <string-array name="weight">
+        <item>Gram</item>
+        <item>Kilogram</item>
+        <item>Pound</item>
+        <item>Ounce</item>
+        <item>Carat</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>Millisecond</item>
+        <item>Second</item>
+        <item>Minute</item>
+        <item>Hour</item>
+        <item>Day</item>
+    </string-array>
+
+    <string name="length_heading">Length</string>
+    <string name="area_heading">Area</string>
+    <string name="volume_heading">Volume</string>
+    <string name="temperature_heading">Temperature</string>
+    <string name="weight_heading">Weight</string>
+    <string name="time_heading">Time</string>
+
+    <string name="copyright_company">©Empty Bottle Productions</string>
+</resources>
