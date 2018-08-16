@@ -34,7 +34,7 @@
         android:minWidth="150dp"
         app:layout_constraintEnd_toStartOf="@+id/arrow_down"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></android.support.v7.widget.AppCompatSpinner>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
         android:id="@+id/arrow_down"
@@ -60,7 +60,7 @@
         android:minWidth="150dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/arrow_down"
-        app:layout_constraintTop_toTopOf="parent"></android.support.v7.widget.AppCompatSpinner>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
         android:id="@+id/left_number_area"
@@ -120,6 +120,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/text_length" />
+        app:layout_constraintTop_toTopOf="@+id/text_length"
+        />
 
 </android.support.constraint.ConstraintLayout>

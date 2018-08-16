@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +21,7 @@ import android.widget.Toast;
 
 import com.example.rebelbob11.juneassignment.R;
 import com.example.rebelbob11.juneassignment.converters.convertToInt;
+import com.example.rebelbob11.juneassignment.converters.converterArea;
 import com.example.rebelbob11.juneassignment.converters.converterVolume;
 
 /**
@@ -144,6 +147,64 @@ public class fragment_volume extends Fragment {
         });
 
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+        left_number.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+
+
+
+
+
+
+
+                if(s.toString().matches("")){
+                    Toast.makeText(getContext(), "Please enter a value", Toast.LENGTH_SHORT).show();
+
+                    first_arg = Double.parseDouble(String.valueOf("0"));
+                    second_arg = new converterVolume(from_volume,to_volume,first_arg).convert();
+                    second_arg_string = String.format("%.4f",second_arg);
+                    resultInt = new convertToInt(second_arg_string).ifInt();
+
+                    right_number.setText(resultInt);
+                }
+                else{
+
+                    first_arg = Double.parseDouble(String.valueOf(s));
+                    second_arg = new converterVolume(from_volume,to_volume,first_arg).convert();
+                    second_arg_string = String.format("%.4f",second_arg);
+                    resultInt = new convertToInt(second_arg_string).ifInt();
+
+                    right_number.setText(resultInt);
+
+                }
+
+
+
+
+
+
+
+
+
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+
+
 
         btn_convert.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -7,6 +7,9 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,8 +41,12 @@ public class fragment_area extends Fragment {
     Double second_arg=0.0;
 
     String second_arg_string ;
+    String first_arg_string;
     String resultInt;
     Integer first_arg_int = 0;
+
+    Boolean left_being_changed = false;
+    Boolean right_being_changed = false;
 
 
     public fragment_area() {
@@ -65,10 +72,15 @@ public class fragment_area extends Fragment {
         ArrayAdapter<CharSequence> adapter_from = ArrayAdapter.createFromResource(getContext(),R.array.area,android.R.layout.simple_spinner_item);
         adapter_from.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner_from.setAdapter(adapter_from);
+
+
         spinner_from.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 from_area = parent.getItemAtPosition(position).toString();
+
+
+
 
 
 //                Toast.makeText(getContext(), "From: "+from_length+" to: "+to_length, Toast.LENGTH_SHORT).show();
@@ -147,6 +159,70 @@ public class fragment_area extends Fragment {
         });
 
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+        left_number.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+
+
+
+
+
+
+
+                    if(s.toString().matches("")){
+                        Toast.makeText(getContext(), "Please enter a value", Toast.LENGTH_SHORT).show();
+
+                        first_arg = Double.parseDouble(String.valueOf("0"));
+                        second_arg = new converterArea(from_area,to_area,first_arg).convert();
+                        second_arg_string = String.format("%.4f",second_arg);
+                        resultInt = new convertToInt(second_arg_string).ifInt();
+
+                        right_number.setText(resultInt);
+                    }
+                    else{
+
+                        first_arg = Double.parseDouble(String.valueOf(s));
+                        second_arg = new converterArea(from_area,to_area,first_arg).convert();
+                        second_arg_string = String.format("%.4f",second_arg);
+                        resultInt = new convertToInt(second_arg_string).ifInt();
+
+                        right_number.setText(resultInt);
+
+                    }
+
+
+
+
+
+
+
+
+
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+
+
+
+
+
+
+
+
 
         btn_convert.setOnClickListener(new View.OnClickListener() {
             @Override
