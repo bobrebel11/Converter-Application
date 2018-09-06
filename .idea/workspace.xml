@@ -9,6 +9,7 @@
         <devices>
           <device id="pixel_2" />
           <device id="2.7in QVGA" />
+          <device id="Nexus One" />
           <device id="Nexus S" />
           <device id="4in WVGA (Nexus S)" />
           <device id="3.2in HVGA slider (ADP1)" />
@@ -16,7 +17,6 @@
           <device id="3.2in QVGA (ADP2)" />
           <device id="5.1in WVGA" />
           <device id="Nexus 4" />
-          <device id="7in WSVGA (Tablet)" />
         </devices>
       </config>
     </shared>
@@ -33,7 +33,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0c8d2def-dfba-4c32-86cc-5f2b087ff888" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_temperature.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_temperature.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_time.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_time.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -112,11 +112,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_temperature.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fragment_temperature.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_temperature.xml">
           <provider editor-type-id="text-editor">
             <state relative-caret-position="812">
               <caret line="155" column="0" lean-forward="true" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_time.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_time.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="977">
+              <caret line="164" column="47" lean-forward="false" selection-start-line="164" selection-start-column="47" selection-end-line="164" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -2187,7 +2200,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/rebelbob11/juneassignment/fragments/fragment_time.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/rebelbob11/juneassignment/fragments/fragment_volume.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/rebelbob11/juneassignment/fragments/fragment_weight.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_time.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_volume.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_weight.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
@@ -2195,6 +2207,7 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_area.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_length.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_temperature.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_time.xml" />
       </list>
     </option>
   </component>
@@ -2477,7 +2490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536205034082</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Temperature fragment layout flexible now.">
+      <created>1536205667761</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1536205667761</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2527,7 +2547,8 @@
     <MESSAGE value="Splashscreen is now flexible on every device." />
     <MESSAGE value="Area fragment layout flexible now." />
     <MESSAGE value="Length fragment layout flexible now." />
-    <option name="LAST_COMMIT_MESSAGE" value="Length fragment layout flexible now." />
+    <MESSAGE value="Temperature fragment layout flexible now." />
+    <option name="LAST_COMMIT_MESSAGE" value="Temperature fragment layout flexible now." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2732,16 +2753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_time.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="64" column="50" lean-forward="false" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_volume.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
@@ -2920,6 +2931,17 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="812">
           <caret line="155" column="0" lean-forward="true" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_time.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="977">
+          <caret line="164" column="47" lean-forward="false" selection-start-line="164" selection-start-column="47" selection-end-line="164" selection-end-column="47" />
           <folding />
         </state>
       </provider>
