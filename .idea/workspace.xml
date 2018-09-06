@@ -33,7 +33,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0c8d2def-dfba-4c32-86cc-5f2b087ff888" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_volume.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_volume.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_weight.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_weight.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -138,8 +138,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_volume.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fragment_volume.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_volume.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="902">
+              <caret line="161" column="47" lean-forward="false" selection-start-line="161" selection-start-column="47" selection-end-line="161" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_weight.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_weight.xml">
           <provider editor-type-id="text-editor">
             <state relative-caret-position="902">
               <caret line="161" column="47" lean-forward="false" selection-start-line="161" selection-start-column="47" selection-end-line="161" selection-end-column="47" />
@@ -2213,7 +2226,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/rebelbob11/juneassignment/fragments/fragment_time.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/rebelbob11/juneassignment/fragments/fragment_volume.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/rebelbob11/juneassignment/fragments/fragment_weight.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_weight.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_area.xml" />
@@ -2221,6 +2233,7 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_temperature.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_time.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_volume.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_weight.xml" />
       </list>
     </option>
   </component>
@@ -2517,7 +2530,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536205986069</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Volume fragment layout flexible now.">
+      <created>1536206973584</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1536206973584</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2570,7 +2590,8 @@
     <MESSAGE value="Length fragment layout flexible now." />
     <MESSAGE value="Temperature fragment layout flexible now." />
     <MESSAGE value="Time fragment layout flexible now." />
-    <option name="LAST_COMMIT_MESSAGE" value="Time fragment layout flexible now." />
+    <MESSAGE value="Volume fragment layout flexible now." />
+    <option name="LAST_COMMIT_MESSAGE" value="Volume fragment layout flexible now." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2775,16 +2796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_weight.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="50" lean-forward="false" selection-start-line="62" selection-start-column="50" selection-end-line="62" selection-end-column="50" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -2962,6 +2973,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_volume.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="902">
+          <caret line="161" column="47" lean-forward="false" selection-start-line="161" selection-start-column="47" selection-end-line="161" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_weight.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="902">
           <caret line="161" column="47" lean-forward="false" selection-start-line="161" selection-start-column="47" selection-end-line="161" selection-end-column="47" />
